@@ -1,0 +1,85 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  background: url("xlb_1.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.top-bar {
+  background-color: #873600;
+  color: white;
+  text-align: center;
+  font-family: "Raleway";
+  padding: 20px;
+  font-variant: small-caps;
+}
+
+.center-content {
+  font-family: "Roboto";
+  text-align: center;
+  height: 100%;
+}
+
+.center-content h1 {
+  vertical-align: middle;
+  font-weight: 100;
+}
+
+.center-content img {
+  max-width: 50%;
+}
+
+.content-1 {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+.content-1 h2 {
+  font-family: "Raleway";
+  color: #e28546;
+}
+
+.content-1 h5 {
+  font-family: sans-serif;
+  color: #bbbbbb;
+}
+
+.content-2 {
+  background-color: #e28546;
+  font-family: "Open Sans";
+  text-align: center;
+  padding: 20px;
+}
+
+.content-2 h2 {
+  font-family: "Raleway";
+}
+
+.content-3 {
+  font-family: "Open Sans";
+  text-align: center;
+  padding: 20px;
+}
+
+.content-3 h2 {
+  font-family: "Raleway";
+}
+
+#donutchart {
+  display: inline-block;
+  border: #e28546;
+}
+
+.bottom-bar {
+  background-color: #873600;
+  color: white;
+  text-align: center;
+  font-family: "Raleway";
+  padding: 10px;
+}

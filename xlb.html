@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xiao Long Bao</title>
+  <link rel="stylesheet" type="text/css" href="xlb.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Raleway" rel="stylesheet">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Condiment', 'Respondents'],
+          ['Vinegar', 4],
+          ['Vinegar and Soy Sauce', 1],
+          ['Soy Sauce', 2],
+          ['Don\'t like', 1],
+          ['Vinegar and soy sauce but with more vinegar', 1],
+          ['Szechuan hot sauce', 1],
+          ['Vinegar and ginger and la jiao', 1]
+        ]);
+
+        var options = {
+          title: 'Xiao Long Bao Condiment Preferences',
+          pieHole: 0.4,
+          backgroundColor: 'transparent'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+  <div class="top-bar">
+    <h1>Xiao Long Bao</h1>
+  </div>
+  <div class="center-content">
+    <h1>There can only be one choice.</h1>
+    <img src="vinegar.png">
+  </div>
+  <div class="content-1">
+    <h2>Vinegar.</h2>
+    <h5>THE MODERN CLASSIC</h5>
+    <p>Vinegar is a classic staple that goes well with xiao long bao. According to Wikipedia, Chinese black vinegar is an aged product made from rice, wheat, millet, sorghum, or a combination thereof. This vinegar is less acidic than its Western counterpart, making it the perfect match for a meal.</p>
+    <p>It's a simple formula:</p>
+    <p>
+      <img src="vinegar.png" style="width: 50px;">
+      +
+      <img src="xlb_2.png" style="width: 50px;">
+      =&nbsp;&nbsp;&nbsp;
+      (happiness!)
+    </p>
+  </div>
+  <div class="content-2">
+    <h2>Simple. Elegant. Refined.</h2>
+    <p>Vinegar is unique because of its beautifully complex simplicity. If that doesn't make sense, it's because it wasn't supposed to.</p>
+    <p>Vinegar's complex taste is too difficult to describe in a simple, Hemingway-esque statement. It is precisely this complex interaction of chemicals that produces the signature slightly acidic and sharply salty taste that pairs so excellently with xiao long bao.</p>
+  </div>
+  <div class="content-3">
+    <h2>The Data Do Support</h2>
+    <p>Thorough and rigorous scientific studies conducted by world-famous biologist Professor Nelson Lin speak to vinegar's timeless ability to hold diners captive with its complex aromas. The latest study, <i>On Oriental Dining Preferences with Respect to Optimal Condiment Pairing with Xiao Long Bao</i>, Prof. Lin determined that vinegar is truely the ideal way to consume Xiao Long Bao. The study included a (not) statistically sound sample completely representative of the entire global population. In the study, most respondents reported that they consumed xiao long bao with some sort of condiment, and of those who said so, the majority reported vinegar as their favorite or among their favorites.</p>
+    <p>Just look at the data below for empirical evidence:</p>
+    <div id="donutchart" style="width: 900px; height: 500px; text-align: center;"></div>
+  </div>
+  <div class="content-1">
+    <h2>Testimonials</h2>
+    <h5>Don't just take our word for it...</h5>
+    <p>"I tried vinegar, and it blew my mind with its amazing taste. What had alredy seemed the perfect meal instantly became even more tasty. I completely recommend vinegar to anyone who is looking for something new and exciting in his or her cuisine." - Reviewer for <i>The New York Times</i></p>
+    <p>"Vinegar and xiao long bao is just one of those rare combinations that works perfectly without difficult each and every time. They are natural complements, just like yin and yang. The same could be said about ketchup and pizza." - Dr. Daniel K. Du, M.D.</p>
+    <p>"I think vinegar and xiao long bao is a meal that is best enjoyed in the Colosseum." - Reviewer for <i>Humans of CSE</i></p>
+  </div>
+  <div class="bottom-bar">
+    Show off your refined taste. <b>Vote Vinegar!</b>
+  </div>
+</body>
+</html>
